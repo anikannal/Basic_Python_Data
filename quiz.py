@@ -66,7 +66,7 @@ def create_mcq(description, options, correct_answer, hint):
 
 def quiz_me(filename):
     #print(__file__)
-    df = pandas.read_excel("./data/quizzes/"+filename, sheet_name='Sheet1')
+    df = pandas.read_excel("Basic_Python_Data/data/quizzes/"+filename, sheet_name='Sheet1')
     
     questions = []
 
