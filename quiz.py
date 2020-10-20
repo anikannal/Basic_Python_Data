@@ -70,6 +70,9 @@ def quiz_me(filename):
     
     questions = []
 
+    for i in range(3):
+        print()
+        
     for i in range(len(df)):
         questions.append(create_mcq(str(i+1)+ ". " + df.iloc[i,0], [df.iloc[i,1], df.iloc[i,2], df.iloc[i,3], df.iloc[i,4]], df.iloc[i,5] ,''))
 
